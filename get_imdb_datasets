@@ -1,0 +1,15 @@
+#!/bin/bash
+# Basic for loop
+
+mkdir -p assets
+cd assets
+
+names='name.basics.tsv.gz title.basics.tsv.gz title.ratings.tsv.gz'
+for name in $names
+do
+foldername=(${name::-7})
+mkdir $foldername && cd $foldername
+wget https://datasets.imdbws.com/$name
+gzip -d $name
+cd ../
+done
