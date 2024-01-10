@@ -12,6 +12,6 @@ updates:
       development-dependencies:
         dependency-type: "development"
     commit-message:
-      prefix: "chore(pip deps)"
-      prefix-development: "chore(pip dev-deps)"
-      include: "scope" 
+      prefix: "chore(pip deps) "
+      prefix-development: "chore(pip dev-deps "
+      # include: "scope" 
