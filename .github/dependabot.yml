@@ -13,12 +13,12 @@ updates:
           - "*"
         update-types:
           - major
-      pip-minor-dependencies:
-        patterns:
-          - "*"
-        dependency-type: "production"
-        update-types:
-          - minor
-          - patch
+      # pip-minor-dependencies:
+      #   patterns:
+      #     - "*"
+      #   dependency-type: "production"
+      #   update-types:
+      #     - minor
+      #     - patch
       pip-dev-dependencies:
         dependency-type: "development"
