@@ -9,9 +9,13 @@ updates:
     groups:
       pip-major-dependencies:
         dependency-type: "production"
+        patterns:
+          - "*"
         update-types:
           - major
       pip-minor-dependencies:
+        patterns:
+          - "*"
         dependency-type: "production"
         update-types:
           - minor
