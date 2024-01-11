@@ -6,7 +6,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "11:38"
+      time: "12:15"
     groups:
       dependencies:
         dependency-type: production
