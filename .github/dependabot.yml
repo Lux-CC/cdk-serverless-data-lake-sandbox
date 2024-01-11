@@ -7,11 +7,18 @@ updates:
       interval: "daily"
     open-pull-requests-limit: 10
     groups:
-      production-dependencies:
+      prod-major:
         dependency-type: "production"
+        update-types:
+          - major
+      prod-minor:
+        dependency-type: "production"
+        update-types:
+          - minor
+          - patch
       development-dependencies:
         dependency-type: "development"
     commit-message:
-      prefix: "chore(pip deps) "
-      prefix-development: "chore(pip dev-deps "
-      # include: "scope" 
+      prefix: "chore(pip deps): "
+      prefix-development: "chore(pip dev-deps)"
+      include: "scope" 
