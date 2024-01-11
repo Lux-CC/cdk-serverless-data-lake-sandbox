@@ -21,10 +21,10 @@ updates:
         - "*"
         update-types:
         - "major"
-      # dev-updates:
-      #   dependency-type: development
-      #   patterns:
-      #   - "*"
+      dev-updates:
+        dependency-type: development
+        patterns:
+        - "*"
     commit-message:
       include: scope
       prefix: build
