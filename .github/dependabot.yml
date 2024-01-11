@@ -6,22 +6,22 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "12:54"
+      time: "12:56"
     groups:
-      dependencies:
+      pip-minor:
         dependency-type: production
         patterns:
         - "*"
         update-types:
         - "minor"
         - "patch"
-      major-updates:
+      pip-major:
         dependency-type: production
         patterns:
         - "*"
         update-types:
         - "major"
-      dev-updates:
+      pip-dev:
         dependency-type: development
         patterns:
         - "*"
