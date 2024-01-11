@@ -6,7 +6,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "12:56"
+      time: "12:58"
     groups:
       pip-minor:
         dependency-type: production
