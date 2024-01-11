@@ -1,2 +1,0 @@
-requests==1.2.3
-aws-cdk-lib==2.25.0
