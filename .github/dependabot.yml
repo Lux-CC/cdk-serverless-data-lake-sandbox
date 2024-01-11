@@ -20,6 +20,8 @@ updates:
         - "*"
         update-types:
         - "major"
+    commit-message:
+      include: scope
         
 
       
