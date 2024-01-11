@@ -1,7 +1,7 @@
 version: 2
 
 updates:
-  # Minor updates to production deps
+  # Major updates to production deps
   - package-ecosystem: "pip"
     ignore:
     - update-types:
@@ -17,7 +17,7 @@ updates:
       pip-major-dependencies:
         dependency-type: "production"
 
-  # Major updates to production deps
+  # Minor updates to production deps
   - package-ecosystem: "pip"
     ignore:
     - update-types:
