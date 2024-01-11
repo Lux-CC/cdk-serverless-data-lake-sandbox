@@ -3,31 +3,23 @@ version: 2
 updates:
   # Major updates to production deps
   - package-ecosystem: "pip"
-    ignore:
-    - update-types:
-        - version-update:semver-minor
-        - version-update:semver-patch
-    allow:
-      - dependency-type: production
     directory: "/"
     schedule:
       interval: "daily"
     groups:
-      pip-major-dependencies:
-        dependency-type: "production"
-
-  # Minor updates to production deps
-  - package-ecosystem: "pip"
-    ignore:
-    - update-types:
-        - version-update:semver-major
-    allow:
-      - dependency-type: production
-    directory: "/"
-    schedule:
-      interval: "daily"
-    groups:
-      pip-major-dependencies:
-        dependency-type: "production"
+      dependencies:
+        dependency-type: production
+        patterns:
+        - "*"
+        update-types:
+        - "minor"
+        - "patch"
+      major-updates:
+        dependency-type: production
+        patterns:
+        - "*"
+        update-types:
+        - "major"
+        
 
       
