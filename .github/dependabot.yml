@@ -12,7 +12,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 10
     groups:
       pip-major-dependencies:
         dependency-type: "production"
@@ -27,7 +26,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 10
     groups:
       pip-major-dependencies:
         dependency-type: "production"
