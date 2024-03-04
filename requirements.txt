@@ -1,5 +1,5 @@
-aws-cdk-lib==2.25.0
+aws-cdk-lib==2.131.0
 requests==1.2.3
 pandas==1.4.1
 pytest==6.2.5
-torch==1.10.2
+torch==1.13.1
